@@ -1,9 +1,128 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgb(17, 17, 17);
     color: white;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    margin: 0 5vw;
+}
+
+/* designing the nav section */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 20px;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav ul li button {
+    padding: 8px 20px;
+    background-color: rgb(36, 35, 35);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* design for main landing page */
+.landingPage {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 180px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.landingPage-image img {
+    /*margin-left: 27%;
+    position: relative;
+    top: -140px;
+    height: 120%;
+    width: 250px;*/
+    width: 240px;
+    position: relative;
+    top: -250px;
+    left: 100px;
+}
+
+.landingPage-text {
+    margin-left: 185px;
+}
+
+#onEarImg {
+    padding-left: 30px;
+    width: 50%;
+    height: 80px;
+}
+
+.landingPage-text h1 {
+    font-size: 50px;
+    line-height: 85px;
+}
+
+.landingPage-text p {
+    width: 55%;
+    padding: 20px 0;
+
+}
+
+.landingPage-text div {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(36, 35, 35);
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+
+}
+
+#shoppingBag {
+    width: 20px;
+    height: 20px;
+}
+
+/* designing social media section */
+.social-media-section {
+    /*margin: 0 15vw;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content:space-around;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    position: relative;
+    top: -50px;
+    margin-bottom: 40px;
+
+
+
 }

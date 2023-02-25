@@ -1,11 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+    outline: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background-color: rgb(17, 17, 17);
+    background: #0f0f10;
     color: white;
     margin-bottom: 30px;
 }
@@ -26,7 +28,6 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 25px 0;
-
 }
 
 nav ul {
@@ -48,11 +49,8 @@ nav ul li button {
     width: 100vw;
     display: flex;
     margin-top: 40px;
-    /*margin-left: 180px;*/
-    /*position: relative;*/
     justify-content: space-around;
     align-items: flex-start;
-    /*gap: 80px;*/
 }
 
 .landingPage-image {
@@ -60,11 +58,6 @@ nav ul li button {
 }
 
 .landingPage-image img {
-    /*margin-left: 27%;
-    position: relative;
-    top: -140px;
-    height: 120%;
-    width: 250px;*/
     width: 240px;
     position: relative;
     top: -250px;
@@ -91,7 +84,7 @@ nav ul li button {
 .landingPage-text p {
     width: 55%;
     padding: 20px 0;
-
+    color: #494a4a;
 }
 
 .landingPage-text div {
@@ -104,7 +97,6 @@ nav ul li button {
     width: 250px;
     border-radius: 10px;
     cursor: pointer;
-
 }
 
 #shoppingBag {
@@ -114,13 +106,6 @@ nav ul li button {
 
 /* designing social media section */
 .social-media-section {
-    /*margin: 0 15vw;
-    width: 70vw;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content:space-around;*/
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -148,7 +133,6 @@ nav ul li button {
     margin-right: auto;
     width: 200px;
     margin-bottom: 20px;
-
 }
 
 .specification-list {
@@ -178,10 +162,8 @@ nav ul li button {
 .specification-list-items div p:last-child {
     color: #bdc0c2;
     font-size: 18px;
-
     width: 70%;
 }
-
 
 .specification-list-items div:first-child,
 .specification-list-items div:last-child {
@@ -234,7 +216,6 @@ nav ul li button {
     width: 150px;
     margin-top: 20px;
     cursor: pointer;
-
 }
 
 /* CSS for buy now section */
@@ -254,6 +235,8 @@ nav ul li button {
 
 .buy-product-text p {
     margin: 10px 0;
+    font-size: 20px;
+    color: #494a4a;
 }
 
 .buy-product-text button {
@@ -273,7 +256,6 @@ nav ul li button {
 /* CSS for product color and style section */
 .color-style-section {
     margin-top: 50px;
-    /*padding: 0 30px;*/
     width: 60vw;
     margin-left: auto;
     margin-right: auto;
@@ -282,11 +264,13 @@ nav ul li button {
     align-items: center;
 
 }
-.color-style-header-img{
+
+.color-style-header-img {
     margin: 50px 0;
     height: 60%;
 }
-.products-list{
+
+.products-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -318,7 +302,17 @@ nav ul li button {
     position: relative;
     top: -90px;
 }
-.add-to-bag{
+
+.product-details div:first-child p:first-child {
+    font-size: 16px;
+}
+
+.product-details div:first-child p:last-child {
+    font-size: 15px;
+    color: #bdc0c2;
+}
+
+.add-to-bag {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -330,33 +324,144 @@ nav ul li button {
     position: relative;
     bottom: -10px;
 }
-.add-to-bag img{
+
+.add-to-bag img {
     width: 15px;
     height: 20px;
 }
 
+/* designing footer section */
+footer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-left {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-left img {
+    height: 40px;
+    scale: 0.9;
+
+}
+
+.footer-left ul h4 {
+    margin-bottom: 10px;
+}
+
+.footer-left ul li a {
+    color: #494a4a;
+    line-height: 30px;
+}
+
+.footer-right {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.email-box {
+    display: flex;
+    gap: 10px;
+}
+
+.email-box div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    background-color: rgb(26, 24, 24);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.email-box input {
+    background-color: rgb(26, 24, 24);
+    border: none;
+    outline: none;
+    color: white;
+}
+
+#right-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#up-arrow {
+    margin-left: 20px;
+    height: 30px;
+    cursor: pointer;
+    scale: 1;
+}
+
+.socials {
+    margin-top: 30px;
+}
+
+.socials img {
+    padding: 5px;
+    cursor: pointer;
+    width: 40px;
+    scale: 0.9;
+
+}
 
 
-@media only screen and (max-width: 850px){
+
+
+
+@media only screen and (max-width: 850px) {
     .landingPage-image img {
         position: relative;
         top: -50px;
         height: 450px;
     }
+
     .landingPage-text {
         position: relative;
-        top: -50px; 
+        top: -50px;
     }
+
     .landingPage-text div {
         margin-top: 6px;
         width: 230px;
-        
+
     }
-    .social-media-section{
+
+    .social-media-section {
         margin-top: 50px;
     }
-    .buy-product{
+
+    .buy-product {
         width: 95vw;
+    }
+}
+
+
+@media only screen and (max-width: 688px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-left {
+        width: 100%;
+    }
+
+    .footer-right {
+        margin-top: 15px;
+        width: 100vw;
+        align-items: center;
+
     }
 }
 
@@ -374,7 +479,6 @@ nav ul li button {
         height: 450px;
         position: relative;
         top: -60px;
-        
     }
 
     .landingPage-text {
@@ -393,11 +497,8 @@ nav ul li button {
         width: 350px;
         height: 90px;
     }
-    .social-media-section{
+
+    .social-media-section {
         margin-top: 20px;
     }
-    
 }
-
-
-
